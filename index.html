@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>沄璟架空层优化 Dashboard</title>
+  <meta name="description" content="沄璟架空层运动健康需求与主题功能分区优化 dashboard">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2317332c'/%3E%3Cpath d='M7 23V9h6l3 5 3-5h6v14h-5V14l-4 6-4-6v9H7z' fill='%23f6e5be'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="dashboard">
+  <div class="site-shell">
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="index.html"><span class="brand-mark"></span><span>沄璟架空层优化</span></a>
+        <nav class="nav" aria-label="主导航">
+          <a href="index.html" data-nav="dashboard">Dashboard</a>
+          <a href="survey.html" data-nav="survey">需求调研</a>
+          <a href="zoning.html" data-nav="zoning">主题分区</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" style="--hero-image: url('plan-overview.jpg')">
+        <div class="hero-content reveal">
+          <p class="eyebrow">Yunjing Stilt Floor Dashboard</p>
+          <h1>把架空层从功能清单升级为全龄乐活会廊</h1>
+          <p class="hero-copy">基于1幢业主调研、7月5日功能初稿与15幢方案沟通，整合运动健康需求、女性友好空间和楼幢主题升级建议。</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#dashboard">查看关键数据</a>
+            <a class="button secondary" href="zoning.html">查看分区方案</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="dashboard" class="section reveal">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">Key Signals</p>
+            <h2>最值得优先投入的是运动健康与女性友好空间。</h2>
+          </div>
+          <p class="section-lede">22份有效问卷显示，健身跑步是男女共同刚需；瑜伽、普拉提是女性业主最集中的品质需求；15幢具备升级为标杆女性运动空间的主题基础。</p>
+        </div>
+
+        <div class="metrics">
+          <div class="metric">
+            <span class="metric-value">95.5%</span>
+            <span class="metric-label">需要跑步机区域</span>
+          </div>
+          <div class="metric">
+            <span class="metric-value">90.9%</span>
+            <span class="metric-label">需要常规健身器械</span>
+          </div>
+          <div class="metric">
+            <span class="metric-value">76.9%</span>
+            <span class="metric-label">女性需要瑜伽舞房</span>
+          </div>
+          <div class="metric">
+            <span class="metric-value">72.7%</span>
+            <span class="metric-label">受访者集中在26-45岁</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section tight">
+        <div class="dashboard-grid">
+          <div class="panel reveal">
+            <h3>功能需求强度</h3>
+            <div id="demand-bars" class="bars"></div>
+          </div>
+          <div class="panel reveal">
+            <h3>每周2次以上使用潜力</h3>
+            <div id="frequency-bars" class="bars"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="split">
+          <div>
+            <p class="section-kicker">15幢重点</p>
+            <h2>“优雅生活”应从开放会客升级为她享身心会馆。</h2>
+            <p class="section-lede">15幢已经具备瑜伽、普拉提、更衣和卫生间基础。下一步应尽量全封闭，保留原普拉提室封闭属性，扩容瑜伽舞房，并提升地面、镜墙、灯光、新风除湿和器械标准。</p>
+            <ol class="decision-list">
+              <li>15幢尽量全封闭，保留并扩大瑜伽舞房、普拉提室和私教/冥想/拉伸房。</li>
+              <li>14幢女王空间和15幢女性运动空间装标不低于19幢绅士会所与健身房。</li>
+              <li>10/12/18形成运动功能矩阵，补足健身、乒乓、瑜伽、拉伸和轻运动容量。</li>
+              <li>6/16等低频主题空间用可变家具和复合运营提高实际使用率。</li>
+            </ol>
+          </div>
+          <div class="image-frame">
+            <img src="assets/plan-15-optimized.jpg" alt="15幢优化平面图">
+            <div class="image-caption">15幢优化平面沟通稿：需进一步保留封闭空间并强化女性运动功能</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">Building Matrix</p>
+            <h2>主题不推翻，表达再升级；空间不闲置，功能可复合。</h2>
+          </div>
+          <p class="section-lede">以下矩阵把原主题、升级主题、左右功能和装标重点放在同一张表里，便于直接用于方案沟通。</p>
+        </div>
+        <div id="building-matrix"></div>
+      </section>
+    </main>
+
+    <footer class="footer">沄璟架空层优化 Dashboard · 数据口径：1幢22份业主问卷及7月5日至7月7日方案沟通材料</footer>
+  </div>
+  <script src="assets/app.js"></script>
+</body>
+</html>
